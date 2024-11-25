@@ -139,7 +139,7 @@ video {
 }
 
 .sub-container h4 {
-  background-color: #6b10e2;
+  background-color: #cfbf28;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
   font-family: 'Arial', sans-serif;
@@ -172,6 +172,6 @@ video {
   object-fit: cover; /* Añadido para ajustar el video en el contenedor sin distorsionarse */
 }
 .imagen-chica {
-  max-width: 15%; /* Puedes ajustar el porcentaje según tus necesidades */
+  max-width: 10%; /* Puedes ajustar el porcentaje según tus necesidades */
   height: auto;
 }

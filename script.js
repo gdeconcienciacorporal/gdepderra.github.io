@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-  actualizarDiasRestantes();
-  setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
-  // Datos para el gráfico de líneas
+ document.addEventListener("DOMContentLoaded", function () {
+  //actualizarDiasRestantes();
+  //setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
+   // Datos para el gráfico de líneas
 const dataLine1 = {
   labels: ['Día 1', 'Día 2'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 3',
-  data: [18, 18], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 5',
+    data: [17, 10], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -16,13 +16,12 @@ const dataLine1 = {
 const dataLine2 = {
   labels: ['Día 1', 'Día 2'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 4',
-    data: [15, 18], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 6',
+    data: [6, 6], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: true,
     tension: 0.1
   }]
-  
 };
 
 // Configuración del gráfico de líneas
@@ -51,9 +50,6 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
     }
   }
 });
-myChartLine1.resize();
-myChartLine2.resize();
-
 
 function actualizarDiasRestantes() {
   // Obtener el título que contiene la fecha objetivo
